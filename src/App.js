@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 
-ReactDOM.render (class App extends Component {
+class App extends Component {
   constructor() {
     super();
     this.state = { repoNames: [] };
@@ -16,7 +15,8 @@ ReactDOM.render (class App extends Component {
       .then((repos) => {
         self.setState({ repoNames: repos.map((r) => { return r.name; })});
       });
-  }
+
+    }
 
   render() {
     return (
@@ -25,6 +25,7 @@ ReactDOM.render (class App extends Component {
       </ol>
     )
   }
-})
+}
 
+export default App;
 
