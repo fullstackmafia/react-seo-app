@@ -27,4 +27,4 @@ ReactDOM.render (class App extends Component {
   }
 })
 
-export default App;
+
