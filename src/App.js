@@ -3,15 +3,27 @@ import logo from './logo.svg';
 import './App.css';
 
 
-class App extends Component {
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { message: "" };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        message: "Hello World!, after 5 seconds"
+      })
+    }, 5000);
+  }
+
   render() {
     return (
-     <div>
-        <h1>Googlebot will always crawl</h1>
+      <div>
+        <h1>{ this.state.message }</h1>
       </div>
-    );
+    )
   }
 }
-
 export default App;
 
