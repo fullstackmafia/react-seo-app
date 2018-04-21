@@ -12,9 +12,9 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        message: "Hello World!, after 15 seconds"
+        message: "Googlebot will always crawl"
       })
-    }, 15000);
+    }, 20000);
   }
 
   render() {
