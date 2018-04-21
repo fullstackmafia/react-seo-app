@@ -12,9 +12,9 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        message: "Hello World!, after 5 seconds"
+        message: "Hello World!, after 15 seconds"
       })
-    }, 5000);
+    }, 15000);
   }
 
   render() {
