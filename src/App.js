@@ -14,7 +14,7 @@ class App extends React.Component {
       this.setState({
         message: "Googlebot will always crawl"
       })
-    }, 20000);
+    }, 1000);
   }
 
   render() {
