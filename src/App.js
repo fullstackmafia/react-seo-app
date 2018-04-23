@@ -2,28 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = { message: "" };
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        message: "Googlebot will always crawl"
-      })
-    }, 1000);
-  }
-
+class App extends Component {
   render() {
     return (
-      <div>
-        <h1>{ this.state.message }</h1>
+     <div>
+        <h1>Googlebot will always crawl</h1>
       </div>
-    )
+    );
   }
 }
+
 export default App;
 
